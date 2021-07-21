@@ -1,0 +1,18 @@
+version: "3"
+ 
+services:
+  jenkins:
+    image: "jenkins-docker"
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./volumeJenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
+#username carlos
+#pass carlos
+#carlos
+#carloscr9018@gmail.com
+#http://localhost:8080/
+#https://github.com/wardviaene/jenkins-course
